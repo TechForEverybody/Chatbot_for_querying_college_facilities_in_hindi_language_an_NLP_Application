@@ -1,0 +1,7 @@
+Hindi Language Stop Words List
+https://data.mendeley.com/datasets/bsr3frvvjc/1
+
+
+
+Word cloud unicode (multilanguage) problem #70
+https://github.com/amueller/word_cloud/issues/70

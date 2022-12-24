@@ -1,0 +1,2 @@
+import indicnlp
+indicnlp.version_txt

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../static/styles/index.css" />
+		<link rel="stylesheet" href="../static/styles/Home.css" />
+		<script src="../static/scripts/index.js"></script>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='styles/index.css')}}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='styles/Home.css')}}"
+		/>
+		<script src="{{url_for('static',filename='scripts/index.js')}}"></script>
+		<title>
+			Chatbot_for_querying_college_facilities_in_hindi_language_an_NLP_Application
+		</title>
+	</head>
+	<body>
+		<header>
+			<h1>कॉलेज सुविधाओ का पूछताछ केंद्र</h1>
+		</header>
+		<hr />
+		<main>
+			<aside>
+				<img src="/static/images/chatbot_background.png" alt="" />
+				<h1>
+					<span style="color: coral">
+						पिल्लई कॉलेज ऑफ इंजीनियरिंग, न्यू पनवेल</span
+					>
+					के पूछताछ केंद्र मे आपका स्वागत हैं
+				</h1>
+			</aside>
+			<section>
+				<div class="chatbotWindow">
+					<div class="chatHeading">
+						<i class="fas fa-robot"></i>
+						<h3>पिल्लई पूछताछ केंद्र</h3>
+					</div>
+					<div id="chatContent">
+						<div class="chat left">
+							नमस्कार, मैं आपकी कैसे मदत कर सकता हु?
+							<div class="time">तो शुरू करैं |</div>
+						</div>
+					</div>
+					<form onsubmit="getResponse(event)">
+						<input
+							type="text"
+							name="question"
+							id="question"
+							placeholder="यहा अपना प्रश्न दर्ज करें"
+							required
+							onchange="getQuestionSuggestion()"
+						/>
+						<button type="submit" id="submitbutton">
+							<i class="fas fa-paper-plane"></i>
+						</button>
+					</form>
+				</div>
+				<div id="suggested">
+				</div>
+			</section>
+		</main>
+<h1>NLP tasks</h1>
+		<div class="container" id="container">
+			<h1 style="margin: 40px;">Please Enter Your First Question</h1>
+		</div>
+
+		<footer>
+			<div class="details">
+				<div class="authors">
+					<p>के द्वारा बनाई गई:</p>
+					<li>शिवकुमार चौहान</li>
+					<li>अर्जुन व. र.</li>
+					<li>अदित्या बुरडे</li>
+					<li>प्रतिक बड़गुजार</li>
+					<li>गोकुल गोपालकृष्णन</li>
+				</div>
+				<div class="concepts">
+					<p>इस्तेमाल किए गए संकल्पनाये :</p>
+					<li>Programming</li>
+					<li>Natural Language Processing</li>
+					<li>Statistics</li>
+				</div>
+				<div class="technologies">
+					<p>इस्तेमाल किए गए तकनिके :</p>
+					<li>Python</li>
+					<li>Scikitlearn</li>
+					<li>Flask</li>
+					<li>JavaScript</li>
+					<li>CSS</li>
+					<li>HTML</li>
+				</div>
+			</div>
+			<hr />
+
+			<div class="bottom">
+				पिल्लई कॉलेज ऑफ इंजीनियरिंग, न्यू पनवेल | All Rights are
+				Reserved
+			</div>
+		</footer>
+	</body>
+</html>
